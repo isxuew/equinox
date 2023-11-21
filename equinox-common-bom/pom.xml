@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.github.isxuew</groupId>
+    <artifactId>equinox-common-bom</artifactId>
+    <version>0.0.1</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <equinox.version>0.0.1</equinox.version>
+
+        <spring-boot.version>3.1.5</spring-boot.version>
+        <lombok.version>1.18.30</lombok.version>
+        <hutool.version>5.8.22</hutool.version>
+        <mapstruct.version>1.5.5.Final</mapstruct.version>
+        <mybatis-plus.version>3.5.3.2</mybatis-plus.version>
+        <swagger.version>2.2.16</swagger.version>
+        <druid.version>1.2.20</druid.version>
+        <redisson.version>3.24.1</redisson.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- equinox -->
+            <dependency>
+                <groupId>com.github.isxuew</groupId>
+                <artifactId>equinox-common-core</artifactId>
+                <version>${equinox.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.isxuew</groupId>
+                <artifactId>equinox-common-api</artifactId>
+                <version>${equinox.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.isxuew</groupId>
+                <artifactId>equinox-common-data</artifactId>
+                <version>${equinox.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.isxuew</groupId>
+                <artifactId>equinox-common-redis</artifactId>
+                <version>${equinox.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.isxuew</groupId>
+                <artifactId>equinox-common-test</artifactId>
+                <version>${equinox.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.isxuew</groupId>
+                <artifactId>equinox-common-web</artifactId>
+                <version>${equinox.version}</version>
+            </dependency>
+            <!-- spring -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- lombok -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+            <!-- hutool -->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+            <!-- mapstruct -->
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId>
+                <version>${mapstruct.version}</version>
+            </dependency>
+            <!-- mybatis -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-extension</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-annotation</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <!-- swagger -->
+            <dependency>
+                <groupId>io.swagger.core.v3</groupId>
+                <artifactId>swagger-annotations-jakarta</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+            <!-- druid -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-3-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+            <!-- redisson -->
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson-spring-boot-starter</artifactId>
+                <version>${redisson.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
