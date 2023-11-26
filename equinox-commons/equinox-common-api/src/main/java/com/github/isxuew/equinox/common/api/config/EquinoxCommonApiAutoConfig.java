@@ -5,6 +5,6 @@ import org.springframework.context.annotation.ComponentScan;
 
 @AutoConfiguration
 @ComponentScan(basePackages = "com.github.isxuew.equinox.common.api")
-public class EquinoxCommonApiConfig {
+public class EquinoxCommonApiAutoConfig {
 
 }
