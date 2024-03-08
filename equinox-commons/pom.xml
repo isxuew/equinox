@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.github.isxuew</groupId>
+        <artifactId>equinox</artifactId>
+        <version>0.0.1</version>
+    </parent>
+
+    <artifactId>equinox-commons</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>equinox-common-api</module>
+        <module>equinox-common-data</module>
+        <module>equinox-common-data-jpa</module>
+        <module>equinox-common-data-mybatis</module>
+        <module>equinox-common-redis</module>
+        <module>equinox-common-test</module>
+        <module>equinox-common-web</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.github.isxuew</groupId>
+            <artifactId>equinox-common-core</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

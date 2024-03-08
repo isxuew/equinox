@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.github.isxuew</groupId>
+        <artifactId>equinox-common-bom</artifactId>
+        <version>0.0.1</version>
+        <relativePath>./equinox-common-bom/pom.xml</relativePath>
+    </parent>
+
+    <artifactId>equinox</artifactId>
+    <version>0.0.1</version>
+    <packaging>pom</packaging>
+
+    <name>equinox</name>
+    <description>base framework</description>
+    <url>https://github.com/isxuew/equinox</url>
+
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>isxuew</name>
+            <email>isxuew@gmail.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <url>https://github.com/isxuew/equinox.git</url>
+        <connection>scm:git@github.com:isxuew/equinox.git</connection>
+        <developerConnection>scm:git@github.com:isxuew/equinox.git</developerConnection>
+    </scm>
+
+    <modules>
+        <module>equinox-common-bom</module>
+        <module>equinox-common-core</module>
+        <module>equinox-commons</module>
+        <module>equinox-demo</module>
+    </modules>
+
+</project>
