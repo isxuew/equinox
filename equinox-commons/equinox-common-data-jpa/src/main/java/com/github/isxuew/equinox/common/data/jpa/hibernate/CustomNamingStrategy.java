@@ -24,9 +24,7 @@ public class CustomNamingStrategy extends PhysicalNamingStrategyStandardImpl imp
         this(null, null, null);
     }
 
-    public CustomNamingStrategy(String prefix,
-                                Collection<String> ignorePrefixes,
-                                Collection<String> ignoreSuffixes) {
+    public CustomNamingStrategy(String prefix, Collection<String> ignorePrefixes, Collection<String> ignoreSuffixes) {
         this.prefix = prefix;
         if (ignorePrefixes != null) {
             this.ignorePrefixes.addAll(ignorePrefixes);
