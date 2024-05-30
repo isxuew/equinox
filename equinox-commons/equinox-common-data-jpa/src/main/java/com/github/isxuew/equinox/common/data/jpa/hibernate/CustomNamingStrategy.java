@@ -1,6 +1,6 @@
 package com.github.isxuew.equinox.common.data.jpa.hibernate;
 
-import cn.hutool.core.collection.CollectionUtil;
+import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.StrUtil;
 import org.hibernate.boot.model.naming.Identifier;
 import org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl;
@@ -14,11 +14,11 @@ public class CustomNamingStrategy extends PhysicalNamingStrategyStandardImpl imp
 
     private static final String SPLIT = "_";
 
-    private String prefix;
+    private final String prefix;
 
-    private Set<String> ignorePrefixes = CollectionUtil.newHashSet();
+    private final Set<String> ignorePrefixes = CollUtil.newHashSet();
 
-    private Set<String> ignoreSuffixes = CollectionUtil.newHashSet("do", "entity");
+    private final Set<String> ignoreSuffixes = CollUtil.newHashSet("do", "entity");
 
     public CustomNamingStrategy() {
         this(null, null, null);
