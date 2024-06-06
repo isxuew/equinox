@@ -15,6 +15,7 @@ import java.util.Optional;
 
 
 public abstract class BaseDAO<T extends Persistable<Long>> {
+
     protected BaseRepository<T> repository;
 
     public BaseDAO(BaseRepository<T> repository) {

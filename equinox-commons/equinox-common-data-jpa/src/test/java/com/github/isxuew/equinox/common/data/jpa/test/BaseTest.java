@@ -1,4 +1,4 @@
-package com.github.isxuew.equinox.common.data;
+package com.github.isxuew.equinox.common.data.jpa.test;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.test.context.SpringBootTest;

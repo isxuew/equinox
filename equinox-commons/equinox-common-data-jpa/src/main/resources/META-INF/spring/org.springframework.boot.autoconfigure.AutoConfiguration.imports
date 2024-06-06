@@ -1,2 +1,2 @@
 com.github.isxuew.equinox.common.data.jpa.config.EquinoxCommonDataJpaAutoConfig
-#com.github.isxuew.equinox.common.data.jpa.config.EquinoxCommonDataJpaQuerydslAutoConfig
+com.github.isxuew.equinox.common.data.jpa.config.EquinoxCommonDataJpaQuerydslAutoConfig
