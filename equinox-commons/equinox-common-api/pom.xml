@@ -13,10 +13,10 @@
     <artifactId>equinox-common-api</artifactId>
 
     <dependencies>
-        <!-- web -->
+        <!-- webmvc -->
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
+            <artifactId>spring-webmvc</artifactId>
         </dependency>
         <!-- validation -->
         <dependency>
